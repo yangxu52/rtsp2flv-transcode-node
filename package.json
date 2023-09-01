@@ -1,0 +1,46 @@
+{
+  "name": "rtsp-2-flv-stream",
+  "version": "1.0.0",
+  "description": "RTSP-2-FLV-STREAM",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node src/app.js --port 3000",
+    "pm2": "cross-env NODE_ENV=production pm2 start ecosystem.config.cjs",
+    "lint": "eslint . --ext .js,.cjs,.mjs --fix",
+    "format": "prettier --write src/**/*.{js,json,md}",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": {
+    "name": "yangxu52"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "websocket-stream": "^5.5.2"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@rushstack/eslint-patch": "^1.3.3",
+    "eslint": "^8.48.0",
+    "eslint-config-standard": "^17.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,mjs,cjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
