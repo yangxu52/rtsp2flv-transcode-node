@@ -9,7 +9,7 @@ RTSP to FLV video streaming
 - 使用websocket-stream监听websocket连接。Use websocket-stream to listen websocket connection.
 
 - **推荐使用 [flv.js](https://github.com/bilibili/flv.js) 作为对应的前端播放器。Recommended to use [flv.js](https://github.com/bilibili/flv.js) as the corresponding frontend player.**
-  - [Vue Component Demo](./demo/rtsp2flvPlayer.vue)
+  - [Vue Component Demo](playground/vue/src/components/FLVPlayer.vue)
 
 ## 使用说明 Usage
 

@@ -1,0 +1,19 @@
+{
+  "name": "rtsp2flv-server-playground-vue",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "npm run build && http-server ./dist"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "vite": "^6.2.4"
+  }
+}

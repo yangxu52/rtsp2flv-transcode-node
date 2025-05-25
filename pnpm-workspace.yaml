@@ -1,0 +1,6 @@
+packages:
+  - packages/*
+  - packages/**/__tests__/**
+  - playground/*
+onlyBuiltDependencies:
+  - esbuild

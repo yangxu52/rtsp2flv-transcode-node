@@ -9,5 +9,7 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*"]
+  "include": [
+    "packages/rtsp2flv-server/src/**/*"
+  ]
 }
